@@ -1,0 +1,12 @@
+.shoe_carousel{
+    background-image: url("../img/banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 300px;
+    @media (max-width: 576px) {
+        
+    }
+}
