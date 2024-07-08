@@ -23,20 +23,21 @@ $.renderCarousel = () => {
         <div class="carousel-item">
             <div class="row">
               <div class="item-left col-md-6 col-sm-12 col-12 ">
-                <h2 class="text-uppercase animate__animated animate__fadeInTopLeft animate__delay-1s ">new arrival</h2>
-                <h1 class="text-uppercase animate__animated animate__fadeInLeft animate__delay-2s">${categories[0].id}</h1>
-                <p class="animate__animated animate__fadeInUp animate__delay-3s">${description}</p>
+                <h2 class="text-uppercase animate__animated animate__fadeInTopLeft ">new arrival</h2>
+                <h1 class="text-uppercase animate__animated animate__fadeInLeft animate__delay-1s">${categories[0].id}</h1>
+                <p class="animate__animated animate__fadeInUp animate__delay-1s">${description}</p>
+                <button class="animate__animated animate__fadeInUp animate__delay-1s text-capitalize">shop now</button>
               </div>
               <div class="item-right col-md-6 col-sm-12 col-12">
-                <img src="${image}" class="d-block w-100 animate__animated animate__delay-3s animate__fadeInTopRight" alt="...">
+                <img src="${image}" class="d-block w-100 animate__animated animate__fadeInTopRight" alt="...">
               </div>
             </div>
             
           </div>
         `
       }
-      $(".carousel-inner").html(content);
-    $(".carousel-inner > div:first-child").addClass("active");
+      $("#home_carousel").html(content);
+    $("#home_carousel > div:first-child").addClass("active");
     })
     .catch((err) => {
       console.log(err);

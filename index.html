@@ -1,117 +1,185 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <title>Title</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
 
-  <!-- Bootstrap CSS v5.2.1 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-<link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  <link rel="stylesheet" href="./css/main.css">
-</head>
-
-<body>
-  <header class="home_header">
-    <div class="container">
-      <div class="header_top">
-        <div class="header_title">
-          <h1>
-            <a href="#">Shoe Shop</a>
+  <body>
+    <header class="home_header">
+      <div class="container">
+        <div class="header_top">
+          <div class="header_title">
+            <h1>
+              <a href="#">Shoe Shop</a>
             </h1>
+          </div>
+          <div class="header_icon">
+            <a href="#"><i class="fa-regular fa-user"></i></a>
+            <a href="#"><i class="fa-regular fa-heart"></i></a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
         </div>
-        <div class="header_icon">
-          <a href="#"><i class="fa-regular fa-user"></i></a>
-          <a href="#"><i class="fa-regular fa-heart"></i></a>
-          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        <div class="header_bottom">
+          <div class="header_nav">
+            <nav class="navbar navbar-expand-sm">
+              <div class="container-fluid">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  class="collapse navbar-collapse"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Deal</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link" href="#"> Trending </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Product</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Customers</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Services</a>
+                    </li>
+                  </ul>
+                  <div class="d-flex" id="header_search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input
+                      class="form-control me-2"
+                      placeholder="Find your shoes"
+                      aria-label="Search"
+                    />
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
         </div>
       </div>
-      <div class="header_bottom">
-        <div class="header_nav">
-        
-          <nav class="navbar navbar-expand-sm">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Deal</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link" href="#">
-                      Trending
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Product</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Customers</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
-                  </li>
-                </ul>
-                <div class="d-flex" id="header_search">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                  <input class="form-control me-2" placeholder="Find your shoes" aria-label="Search">
+    </header>
+    <section class="shoe_carousel">
+      <div class="container">
+        <div
+          id="carouselExampleAutoplaying"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner" id="home_carousel"></div>
+        </div>
+      </div>
+    </section>
+    <section class="home_deal">
+      <div class="home_deal_new">
+        <div class="container">
+          <div class="flashsale_content">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" >
+              <div class="carousel-inner" id="deal-carousel">
+                <div class="deal-carousel-item carousel-item active">
+                  <i class="fa-solid fa-arrow-left"></i>
+                  <div class="flashsale_title text-danger text-uppercase">
+                    black friday
+                  </div>
+                  <div class="flashsale_message">
+                    The biggest sales event of the year is coming up and you
+                    don't want to miss it
+                  </div>
                   <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="deal-carousel-item carousel-item">
+                  <div class="flashsale_title text-danger text-uppercase">
+                    year end flash sale
+                  </div>
+                  <div id="countdown"></div>
+                  <button>view more</button>
                 </div>
               </div>
             </div>
-          </nav>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
-  <section class="shoe_carousel">
-    <div class="container">
-      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner" id="hana">
+      <div class="home_deal_item"></div>
+    </section>
+    <section class="flash_sale"></section>
+    <section class="products"></section>
+    <section class="services"></section>
+    <footer class="home_footer">
+      <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
 
-        
-        </div>
-        
-      </div>
-    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"
+      integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     
-  </section>
-  <section class="home_deal"> 
-    <div class="home_deal_new"></div>
-    <div class="home_deal_item"></div>
-  </section>
-  <section class="flash_sale"></section>
-  <section class="products"></section>
-  <section class="services"></section>
-  <footer>
-    <!-- place footer here -->
-  </footer class="home_footer">
-  <!-- Bootstrap JavaScript Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js" integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="./js/index.js"></script>
-</body>
-
+    <script src="./js/index.js"></script>
+    <script src="./js/flashsales.js"></script>
+  </body>
 </html>

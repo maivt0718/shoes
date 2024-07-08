@@ -7,51 +7,58 @@
     min-height: 100vh;
     padding-top: 300px;
     color: $color;
-    #carouselExampleAutoplaying{
-        margin: auto;
-        font-weight: 700;
-        .item-left{
-            margin-top: 20px;
-            h2{
-                font-size: 30px;
+    .container{
+        margin-bottom: 0;
+        #carouselExampleAutoplaying{
+            margin: auto;
+            font-weight: 700;
+            .item-left{
+                margin-top: 20px;
+                h2{
+                    font-size: 30px;
+                }
+                h1{
+                    font-size: 80px;
+                    font-weight: 900;
+                    color: green;
+                }
+                p{
+                    font-size: 20px;
+                    margin: 20px 0;
+                    line-height: 2;
+                }
+                button{
+                    @include styleButton();
+                }
             }
-            h1{
-                font-size: 80px;
-                font-weight: 900;
-                color: green;
-            }
-            p{
-                font-size: 20px;
-                margin: 20px 0;
-                line-height: 2;
+            .item-right{
+                height: 50%;
+                img{
+                    object-fit: cover;
+                    object-position:top;
+                    width: 100%;
+                    animation: move 5s infinite;
+                }
             }
         }
-        .item-right{
-            height: 50%;
-            img{
-                object-fit: cover;
-                object-position:top;
-                width: 100%;
-                animation: move 5s infinite;
-            }
+        @media (max-width: 576px) {
+            min-height: 50vh;
         }
     }
-    @media (max-width: 576px) {
-        min-height: 50vh;
-    }
+    
 }
 
 @keyframes move {
     0% {
       transform: rotate(-45deg) translate(20px, 20px);
-      transition-delay: 2s;
+     
     }
     50% {
       transform: rotate(-45deg) translate(20px, -20px);
-      transition-delay: 2s;
+      
     }
     100% {
       transform: rotate(-45deg) translate(20px, 20px);
-      transition-delay: 2s;
+    
     }
   }
