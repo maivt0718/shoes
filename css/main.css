@@ -2,11 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
 }
 
 .container {
-  margin: 0 auto;
-  max-width: 2500px;
+  margin: 30px auto;
+  padding-left: 30px;
+  width: 100%;
+}
+@media (max-width: 576px) {
+  .container {
+    margin: auto;
+    padding: auto;
+  }
 }
 
 a {
@@ -26,7 +34,6 @@ body {
   width: 100%;
 }
 .home_header .header_top {
-  margin: 30px 80px;
   display: flex;
   justify-content: space-between;
   color: white;
@@ -45,8 +52,15 @@ body {
   color: white;
   margin-left: 10px;
 }
+.home_header .header_top .header_icon i:hover {
+  color: red;
+  border-color: red;
+}
+.home_header .header_top .header_title h1 a:hover {
+  color: red;
+}
 .home_header .header_bottom {
-  margin: 20px 80px;
+  margin-top: 20px;
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -58,6 +72,9 @@ body {
 }
 .home_header .header_bottom .header_nav .navbar .nav-link {
   color: white;
+}
+.home_header .header_bottom .header_nav .navbar .nav-link:hover {
+  color: red;
 }
 .home_header .header_bottom #header_search {
   width: 30%;
@@ -83,9 +100,6 @@ body {
   box-shadow: none;
 }
 @media (min-width: 576px) {
-  .home_header .header_top {
-    margin: 30px 80px;
-  }
   .home_header .header_nav {
     width: 100%;
     margin: 0 auto;
@@ -130,4 +144,72 @@ body {
   width: 100%;
   min-height: 100vh;
   padding-top: 300px;
+  color: white;
+}
+.shoe_carousel #carouselExampleAutoplaying {
+  margin: auto;
+  font-weight: 700;
+}
+.shoe_carousel #carouselExampleAutoplaying .item-left {
+  margin-top: 20px;
+}
+.shoe_carousel #carouselExampleAutoplaying .item-left h2 {
+  font-size: 30px;
+}
+.shoe_carousel #carouselExampleAutoplaying .item-left h1 {
+  font-size: 80px;
+  font-weight: 900;
+  color: green;
+}
+.shoe_carousel #carouselExampleAutoplaying .item-left p {
+  font-size: 20px;
+  margin: 20px 0;
+  line-height: 2;
+}
+.shoe_carousel #carouselExampleAutoplaying .item-right {
+  height: 50%;
+}
+.shoe_carousel #carouselExampleAutoplaying .item-right img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  width: 100%;
+  -webkit-animation: move 5s infinite;
+          animation: move 5s infinite;
+}
+@media (max-width: 576px) {
+  .shoe_carousel {
+    min-height: 50vh;
+  }
+}
+
+@-webkit-keyframes move {
+  0% {
+    transform: rotate(-45deg) translate(20px, 20px);
+    transition-delay: 2s;
+  }
+  50% {
+    transform: rotate(-45deg) translate(20px, -20px);
+    transition-delay: 2s;
+  }
+  100% {
+    transform: rotate(-45deg) translate(20px, 20px);
+    transition-delay: 2s;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: rotate(-45deg) translate(20px, 20px);
+    transition-delay: 2s;
+  }
+  50% {
+    transform: rotate(-45deg) translate(20px, -20px);
+    transition-delay: 2s;
+  }
+  100% {
+    transform: rotate(-45deg) translate(20px, 20px);
+    transition-delay: 2s;
+  }
 }/*# sourceMappingURL=main.css.map */
