@@ -24,9 +24,9 @@ $.renderCarousel = () => {
             <div class="row">
               <div class="item-left col-md-6 col-sm-12 col-12 ">
                 <h2 class="text-uppercase animate__animated animate__fadeInTopLeft ">new arrival</h2>
-                <h1 class="text-uppercase animate__animated animate__fadeInLeft animate__delay-1s">${categories[0].id}</h1>
-                <p class="animate__animated animate__fadeInUp animate__delay-1s">${description}</p>
-                <button class="animate__animated animate__fadeInUp animate__delay-1s text-capitalize">shop now</button>
+                <h1 class="text-uppercase animate__animated animate__fadeInLeft">${categories[0].id}</h1>
+                <p class="animate__animated animate__fadeInUp">${description}</p>
+                <button class="animate__animated animate__fadeInUp animate__delay-5s text-capitalize">shop now</button>
               </div>
               <div class="item-right col-md-6 col-sm-12 col-12">
                 <img src="${image}" class="d-block w-100 animate__animated animate__fadeInTopRight" alt="...">

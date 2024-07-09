@@ -191,8 +191,9 @@ body {
           animation: move 5s infinite;
 }
 @media (max-width: 576px) {
-  .shoe_carousel .container {
-    min-height: 50vh;
+  .shoe_carousel {
+    min-height: 10vh;
+    padding-top: 150px;
   }
 }
 
@@ -224,7 +225,7 @@ body {
 }
 .home_deal .home_deal_new {
   position: absolute;
-  min-height: 50px;
+  min-height: 300px;
   width: 100%;
   background-color: black;
   color: white;
@@ -240,6 +241,7 @@ body {
   font-size: 20px;
   line-height: 40px;
   text-align: center;
+  transition: all 1.5s;
 }
 .home_deal .home_deal_new .container .flashsale_content .deal-carousel-item .flashsale_title {
   color: red;
@@ -253,7 +255,6 @@ body {
 }
 .home_deal .home_deal_new .container .flashsale_content .deal-carousel-item i:hover {
   cursor: pointer;
-  background-color: white;
   color: black;
 }
 .home_deal .home_deal_new .container .flashsale_content .deal-carousel-item button {
@@ -265,4 +266,23 @@ body {
   height: 50px;
   border-radius: 30px;
   text-transform: uppercase;
+}
+@media (max-width: 576px) {
+  .home_deal .home_deal_new .container {
+    margin: 20px auto;
+  }
+  .home_deal .home_deal_new .container .flashsale_content .deal-carousel-item button {
+    background-color: rgb(17, 227, 17);
+    color: black;
+    text-align: center;
+    font-size: 15px;
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    text-transform: uppercase;
+  }
+}
+.home_deal .home_deal_item {
+  position: absolute;
+  top: 200px;
 }/*# sourceMappingURL=main.css.map */

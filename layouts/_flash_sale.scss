@@ -2,7 +2,7 @@
   position: relative;
   .home_deal_new {
     position: absolute;
-    min-height: 50px;
+    min-height: 300px;
     width: 100%;
     background-color: black;
     color: $color;
@@ -17,6 +17,7 @@
           font-size: 20px;
           line-height: 40px;
           text-align: center;
+          transition: all 1.5s;
           .flashsale_title {
             color: red;
           }
@@ -28,16 +29,31 @@
             border-radius: 50%;
             &:hover {
               cursor: pointer;
-              background-color: $color;
               color: black;
             }
           }
-          button{
+          button {
             @include styleButton();
             text-transform: uppercase;
           }
         }
       }
+      @media (max-width: 576px) {
+        margin: 20px auto;
+
+        .flashsale_content {
+          .deal-carousel-item {
+            button {
+              @include styleButton($fs: 15px);
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
     }
+  }
+  .home_deal_item {
+    position: absolute;
+    top: 200px;
   }
 }
