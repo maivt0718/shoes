@@ -11,7 +11,7 @@ $.renderFlashSale = () => {
               <div class="deal_outside col-12 col-sm-12 col-md-12 col-lg-4">
                 <div class="deal_overlay">
                   <div><i class="fa-solid fa-arrow-right"></i></div>
-                  <h3>${categories[0].id}</h3>
+                  <h3 class="${categories[0].id}">${categories[0].id}</h3>
                   
                 </div>
                 <img src="${image}" alt="" srcset="">
@@ -19,7 +19,10 @@ $.renderFlashSale = () => {
             </div>
             `;
       }
+      
+      
       $(".deal_list").html(content);
+      console.log($(".VANS_CONVERSE").parent().css("right", "10%"));
     })
     .catch((err) => {
       console.log(err);
