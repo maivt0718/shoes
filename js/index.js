@@ -18,7 +18,7 @@ $.renderCarousel = () => {
     .then((res) => {
       for (const element of res) {
         let {description, image,categories} = element
-        console.log(categories[0].id)
+       
         content += `
         <div class="carousel-item">
             <div class="row">
