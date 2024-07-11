@@ -22,7 +22,6 @@ $.renderFlashSale = () => {
       
       
       $(".deal_list").html(content);
-      console.log($(".VANS_CONVERSE").parent().css("right", "10%"));
     })
     .catch((err) => {
       console.log(err);

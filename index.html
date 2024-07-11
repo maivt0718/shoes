@@ -33,6 +33,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/jquery-ui.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
 
@@ -41,12 +45,25 @@
       <div class="container">
         <div class="header_top">
           <div class="header_title">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa-solid fa-bars navbar-toggler-icon"></i>
+            </button>
             <h1>
               <a href="#">Shoe Shop</a>
             </h1>
           </div>
           <div class="header_icon">
-            <a href="#"><i class="fa-regular fa-user"></i></a>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#myModal"
+              ><i class="fa-regular fa-user"></i
+            ></a>
             <a href="#"><i class="fa-regular fa-heart"></i></a>
             <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
           </div>
@@ -55,7 +72,7 @@
           <div class="header_nav">
             <nav class="navbar navbar-expand-sm">
               <div class="container-fluid">
-                <button
+                <!-- <button
                   class="navbar-toggler"
                   type="button"
                   data-bs-toggle="collapse"
@@ -65,7 +82,7 @@
                   aria-label="Toggle navigation"
                 >
                   <span class="navbar-toggler-icon"></span>
-                </button>
+                </button> -->
                 <div
                   class="collapse navbar-collapse"
                   id="navbarSupportedContent"
@@ -121,10 +138,19 @@
       <div class="home_deal_new">
         <div class="container">
           <div class="flashsale_content">
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" >
+            <div
+              id="carouselExampleFade"
+              class="carousel slide carousel-fade"
+              data-bs-ride="carousel"
+            >
               <div class="carousel-inner" id="deal-carousel">
                 <div class="deal-carousel-item carousel-item active">
-                  <i class="fa-solid fa-arrow-left" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev"></i>
+                  <i
+                    class="fa-solid fa-arrow-left"
+                    type="button"
+                    data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev"
+                  ></i>
                   <div class="flashsale_title text-danger text-uppercase">
                     black friday
                   </div>
@@ -132,32 +158,172 @@
                     The biggest sales event of the year is coming up and you
                     don't want to miss it
                   </div>
-                  <i class="fa-solid fa-arrow-right" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next"></i>
+                  <i
+                    class="fa-solid fa-arrow-right"
+                    type="button"
+                    data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next"
+                  ></i>
                 </div>
                 <div class="deal-carousel-item carousel-item">
-                  <i class="fa-solid fa-arrow-left" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev"></i>
+                  <i
+                    class="fa-solid fa-arrow-left"
+                    type="button"
+                    data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev"
+                  ></i>
                   <div class="flashsale_title text-danger text-uppercase">
                     year end flash sale
                   </div>
                   <div id="countdown"></div>
                   <button>view more</button>
-                  <i class="fa-solid fa-arrow-right" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next"></i>
+                  <i
+                    class="fa-solid fa-arrow-right"
+                    type="button"
+                    data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next"
+                  ></i>
                 </div>
               </div>
-              
             </div>
           </div>
         </div>
       </div>
       <div class="home_deal_content">
         <div class="container">
-          <div class="row justify-content-center deal_list">
-          </div>
+          <div class="row justify-content-center deal_list"></div>
         </div>
-        
       </div>
     </section>
-    <section class="flash_sale"></section>
+    <section class="register_modal">
+      
+        <div
+          class="modal fade"
+          id="myModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+        <div class="container">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                  Register
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form class="form_content">
+                  <div class="row">
+                    <div class="form_left col-12 col-sm-12 col-md-6">
+                      <div class="register_item name mb-3">
+                        <div class="input-group">
+                          <label for="" class="form-label">Name</label>
+                          <input
+                            type="text"
+                            class="form-control-input"
+                            name="name"
+                            id="name"
+                            placeholder=""
+                          />
+                        </div>
+                        <span class="error-name"></span>
+                      </div>
+                      <div class="register_item password mb-3">
+                        <div class="input-group">
+                          <label for="" class="form-label">Password</label>
+                          <input
+                            type="password"
+                            class="form-control-input"
+                            name="password"
+                            id="password"
+                            placeholder=""
+                          />
+                        </div>
+                        <span class="error-password"></span>
+                      </div>
+                      <div class="register_item email mb-3">
+                        <div class="input-group">
+                          <label for="" class="form-label">Email</label>
+                          <input
+                            type="email"
+                            class="form-control-input"
+                            name="email"
+                            id="email"
+                            placeholder=""
+                          />
+                        </div>
+                        <span class="error-email"></span>
+                      </div>
+                    </div>
+                    <div class="form_right col-12 col-sm-12 col-md-6">
+                      <div class="register_item datepicker mb-3">
+                        <div class="input-group">
+                          <label for="datepicker" class="form-label"
+                            >Birth of date</label
+                          >
+                          <input
+                            class="form-control-input"
+                            name="datepicker"
+                            id="datepicker"
+                            placeholder=""
+                          />
+                        </div>
+                        <span class="error-bod"></span>
+                      </div>
+                      <div class="register_item phone mb-3">
+                        <div class="input-group">
+                          <label for="" class="form-label">Phone</label>
+                          <input
+                            type="number"
+                            class="form-control-input"
+                            name="phone"
+                            id="phone"
+                            placeholder=""
+                          />
+                        </div>
+                        <span class="error-phone"></span>
+                      </div>
+                      <div class="register_item email mb-3">
+                        <div class="input-group">
+                          <label for="" class="form-label">Gender</label>
+                          <select class="form_select" name="" id="gender">
+                            <option selected>Select one</option>
+                            <option value="">Male</option>
+                            <option value="">Female</option>
+                            <option value="">Others</option>
+                          </select>
+                        </div>
+                        <span class="error-email"></span>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary col-6 col-sm-1 btn-close-footer"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-primary col-6 col-sm-1 btn-save-footer">
+                  Register
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+     
+    </section>
     <section class="products"></section>
     <section class="services"></section>
     <footer class="home_footer">
@@ -187,9 +353,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
     <script src="./js/index.js"></script>
+    <script src="./js/datepicker.js"></script>
     <script src="./js/countTimeDown.js"></script>
     <script src="./js/flashsales.js"></script>
+    <script src="./js/validation.js"></script>
+    <script src="./js/register.js"></script>
   </body>
 </html>

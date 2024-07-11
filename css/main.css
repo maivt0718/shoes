@@ -56,8 +56,43 @@ body {
   color: red;
   border-color: red;
 }
+.home_header .header_top .header_title {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.home_header .header_top .header_title button {
+  display: none;
+}
+.home_header .header_top .header_title h1 {
+  text-align: center;
+  margin-bottom: 0;
+}
+.home_header .header_top .header_title h1 a {
+  line-height: 50px;
+}
 .home_header .header_top .header_title h1 a:hover {
   color: red;
+}
+@media (max-width: 576px) {
+  .home_header .header_top .header_title button {
+    display: block;
+    border-color: white;
+    width: 50px;
+  }
+  .home_header .header_top .header_title button .navbar-toggler-icon {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    line-height: 100%;
+  }
+  .home_header .header_top .header_title button .navbar-toggler-icon::before {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 .home_header .header_bottom {
   margin-top: 20px;
@@ -283,9 +318,11 @@ body {
   }
 }
 .home_deal .home_deal_content {
-  position: absolute;
-  top: 100px;
+  padding-top: 100px;
   width: 100%;
+}
+.home_deal .home_deal_content .container {
+  margin-bottom: 200px;
 }
 .home_deal .home_deal_content .container .row {
   gap: 30px;
@@ -379,15 +416,56 @@ body {
 }
 @media (max-width: 720px) {
   .home_deal .home_deal_content {
-    top: 200px;
+    padding-top: 200px;
   }
   .home_deal .home_deal_content .container {
     margin: 0 auto;
+    margin-bottom: 100px;
     padding: 0 30px;
   }
   .home_deal .home_deal_content .container .row .deal_item {
     width: 90%;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     height: 300px;
   }
+}
+
+#myModal .container .modal-dialog {
+  margin: 0;
+  max-width: 100%;
+}
+#myModal .container .form_content {
+  text-align: center;
+}
+#myModal .container .form_content .register_item .input-group {
+  display: flex;
+  gap: 20px;
+}
+#myModal .container .form_content .register_item .input-group label {
+  width: 15%;
+  float: left;
+}
+#myModal .container .form_content .register_item .input-group .form-control-input, #myModal .container .form_content .register_item .input-group select {
+  width: 80%;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+#myModal .container .btn-save-footer {
+  background-color: rgb(17, 227, 17);
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  width: 150px;
+  height: 50px;
+  border-radius: 30px;
+}
+#myModal .container .btn-close-footer {
+  background-color: rgb(202, 194, 194);
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  width: 150px;
+  height: 50px;
+  border-radius: 30px;
 }/*# sourceMappingURL=main.css.map */

@@ -22,7 +22,7 @@ $.renderCarousel = () => {
         content += `
         <div class="carousel-item">
             <div class="row">
-              <div class="item-left col-md-6 col-sm-12 col-12 ">
+              <div class="item-left col-md-6 col-sm-12 col-12 text-center ">
                 <h2 class="text-uppercase animate__animated animate__fadeInTopLeft ">new arrival</h2>
                 <h1 class="text-uppercase animate__animated animate__fadeInLeft">${categories[0].id}</h1>
                 <p class="animate__animated animate__fadeInUp">${description}</p>
@@ -52,3 +52,4 @@ const instance = axios.create({
 });
 
 $.renderCarousel()
+

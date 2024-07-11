@@ -53,11 +53,10 @@
     }
   }
   .home_deal_content {
-    position: absolute;
-    top: 100px;
+    padding-top: 100px;
     width: 100%;
     .container {
-      
+      margin-bottom: 200px;
       .row {
         gap: 30px;
         .deal_item {
@@ -158,14 +157,15 @@
       }
     }
     @media (max-width: 720px) {
-      top: 200px;
+      padding-top: 200px;
       .container {
         margin: 0 auto;
+        margin-bottom: 100px;
         padding: 0 30px;
         .row {
           .deal_item {
             width: 90%;
-            margin-bottom: 150px;
+            margin-bottom: 100px;
             height: 300px;
           }
         }
