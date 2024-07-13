@@ -1,78 +1,70 @@
 $.getUserInfo = async (secret) => {
   try {
-    let result = await instance.get("Users/getProfile", {
+    console.log(secret)
+    let result = await instance.post("Users/getProfile", {}, {
       headers: {
-        Authorization: `Bearer ${secret}`,
+        "Authorization": `Bearer ${secret}`
       },
     });
+    if (result.data.statusCode == 200) {
+      $.toastify(
+        result.data.message,
+        "linear-gradient(to right, #00b09b, #96c93d)"
+      );
+    }
   } catch (error) {
-    console.error(err);
+    console.error(error);
+    throw error;
+  }
+};
+
+$.toastify = (message, color) => {
+  Toastify({
+    text: `${message}`,
+    duration: 3000,
+    newWindow: true,
+    close: true,
+    gravity: "top", // `top` or `bottom`
+    position: "left", // `left`, `center` or `right`
+    stopOnFocus: true, // Prevents dismissing of toast on hover
+    style: {
+      background: `${color}`,
+    },
+  }).showToast();
+};
+
+$.login = async (user) => {
+  try {
+    let result = await instance.post("Users/signin", { ...user });
+    if (result.data.statusCode == 200) {
+      $.getUserInfo(result.data.content.accessToken);
+    }
+  } catch (error) {
+    $.toastify(
+      result.data.message,
+      "linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);"
+    );
+    console.log(error);
+    throw error;
   }
 };
 
 $.register = async (user) => {
   try {
     let result = await instance.post("Users/signup", { ...user });
-    temp = {
-      data: {
-        statusCode: 200,
-        message: "Đăng ký tài khoản thành công!",
-        content: {
-          email: "wijukyxaz@mailinator.com",
-          password: "Pa$$w0rd!",
-          name: "Madaline Larson",
-          gender: false,
-          phone: "0813981597",
-        },
-        dateTime: "2024-07-13T10:54:55.0019475+07:00",
-      },
-      status: 200,
-      statusText: "OK",
-      headers: {
-        "content-type": "application/json; charset=utf-8",
-      },
-      config: {
-        transitional: {
-          silentJSONParsing: true,
-          forcedJSONParsing: true,
-          clarifyTimeoutError: false,
-        },
-        adapter: ["xhr", "http", "fetch"],
-        transformRequest: [null],
-        transformResponse: [null],
-        timeout: 30000,
-        xsrfCookieName: "XSRF-TOKEN",
-        xsrfHeaderName: "X-XSRF-TOKEN",
-        maxContentLength: -1,
-        maxBodyLength: -1,
-        env: {},
-        headers: {
-          Accept: "application/json, text/plain, */*",
-          "Content-Type": "application/json",
-        },
-        baseURL: "https://shop.cyberlearn.vn/api/",
-        method: "post",
-        url: "Users/signup",
-        data: '{"name":"Madaline Larson","password":"Pa$$w0rd!","email":"wijukyxaz@mailinator.com","bod":"","gender":false,"phone":"0813981597","datepicker":"03/07/2024"}',
-      },
-      request: {},
-    };
     if (result.data.statusCode == 200) {
-      Toastify({
-        text: `${result.data.message}`,
-        duration: 3000,
-        newWindow: true,
-        close: true,
-        gravity: "top", // `top` or `bottom`
-        position: "left", // `left`, `center` or `right`
-        stopOnFocus: true, // Prevents dismissing of toast on hover
-        style: {
-          background: "linear-gradient(to right, #00b09b, #96c93d)",
-        }
-      }).showToast();
+      $.toastify(
+        result.data.message,
+        "linear-gradient(to right, #00b09b, #96c93d)"
+      );
     }
   } catch (error) {
+    $.toastify(
+      result.data.message,
+      "linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);"
+    );
     console.log(error);
+    throw error;
   }
 };
 
@@ -80,7 +72,7 @@ $.getValueFromForm = () => {
   let consumer = new Customer();
   let isValue = true;
 
-  let arrFields = $(".form_content input, .form_content select");
+  let arrFields = $("#form input,#form select");
   for (const element of arrFields) {
     let { id, value } = element;
     let span = $(`#${id}`).parent().parent()[0].lastElementChild.id;
@@ -105,7 +97,7 @@ $.getValueFromForm = () => {
     if (id == "datepicker") {
       isValue &= $.checkDate(span, value);
     }
-    if (id != "gender") {
+    if (id != "gender" && isValue) {
       consumer[id] = value;
     }
   }
@@ -117,10 +109,39 @@ $.getValueFromForm = () => {
   return;
 };
 
+$.getValueFromLoginFormAndLogin = () => {
+  let consumer = new Customer();
+  let isValue = true;
+  let arrFields = $("#login_form input");
+  for (const element of arrFields) {
+    let { id, value } = element;
+    let span = $(`#${id}`).parent().parent()[0].lastElementChild.id;
+    if (id == "login_password") {
+      consumer["password"] = value;
+    }
+    if (id == "login_email") {
+      isValue &= $.checkEmail(span, value);
+      consumer["email"] = value;
+    }
+  }
+  if (isValue) {
+    $.login({ ...consumer });
+    $("#login_form").trigger("reset");
+    $("#myLoginModal").modal("hide");
+    return consumer;
+  }
+  return;
+};
+
 $(".btn-save-footer").click(function (e) {
   e.preventDefault();
   consumer = $.getValueFromForm();
   if (consumer) {
     $.register(consumer);
   }
+});
+
+$(".btn-login-footer").click(function (e) {
+  e.preventDefault();
+  consumer = $.getValueFromLoginFormAndLogin();
 });

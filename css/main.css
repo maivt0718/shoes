@@ -26,6 +26,10 @@ body {
   position: relative;
 }
 
+.fa-user::before {
+  content: "\f007";
+}
+
 .home_header {
   z-index: 1;
   width: 100%;
@@ -430,33 +434,33 @@ body {
   }
 }
 
-#myModal .container .modal-dialog {
+#myModal .container .modal-dialog, #myLoginModal .container .modal-dialog {
   margin: 0;
   max-width: 100%;
 }
-#myModal .container .form_content {
+#myModal .container .form_content, #myLoginModal .container .form_content {
   text-align: center;
 }
-#myModal .container .form_content .register_item .input-group {
+#myModal .container .form_content .register_login_item .input-group, #myLoginModal .container .form_content .register_login_item .input-group {
   display: flex;
   gap: 20px;
 }
-#myModal .container .form_content .register_item .input-group label {
+#myModal .container .form_content .register_login_item .input-group label, #myLoginModal .container .form_content .register_login_item .input-group label {
   width: 15%;
   text-align: left;
 }
-#myModal .container .form_content .register_item .input-group .form-control-input, #myModal .container .form_content .register_item .input-group select {
+#myModal .container .form_content .register_login_item .input-group .form-control-input, #myModal .container .form_content .register_login_item .input-group select, #myLoginModal .container .form_content .register_login_item .input-group .form-control-input, #myLoginModal .container .form_content .register_login_item .input-group select {
   width: 80%;
   border: 1px solid black;
   border-radius: 10px;
   padding: 5px 10px;
 }
-#myModal .container .form_content .register_item span {
+#myModal .container .form_content .register_login_item span, #myLoginModal .container .form_content .register_login_item span {
   color: red;
   width: 100%;
   text-align: left;
 }
-#myModal .container .btn-save-footer {
+#myModal .container .btn-save-footer, #myModal .container .btn-login-footer, #myLoginModal .container .btn-save-footer, #myLoginModal .container .btn-login-footer {
   background-color: rgb(17, 227, 17);
   color: black;
   text-align: center;
@@ -465,7 +469,7 @@ body {
   height: 50px;
   border-radius: 30px;
 }
-#myModal .container .btn-close-footer {
+#myModal .container .btn-close-footer, #myLoginModal .container .btn-close-footer {
   background-color: rgb(202, 194, 194);
   color: black;
   text-align: center;

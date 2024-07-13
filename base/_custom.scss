@@ -16,3 +16,10 @@ a{
 body{
     position: relative;
 }
+
+.fa-user{
+    &::before{
+        content: $user_icon;
+    }
+    
+}

@@ -63,9 +63,8 @@
           </div>
           <div class="header_icon">
             <a href="#" data-bs-toggle="modal" data-bs-target="#myModal"
-              ><i class="fa-regular fa-user"></i
-            ></a>
-            <a href="#"><i class="fa-regular fa-heart"></i></a>
+              ><i class="fa-solid fa-address-card" title="Register"></i></a>
+            <a href="#" data-bs-toggle="modal" title="Login" data-bs-target="#myLoginModal"><i class="fa-solid fa-right-to-bracket"></i></a>
             <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
           </div>
         </div>
@@ -212,7 +211,7 @@
                 <form class="form_content" id="form">
                   <div class="row">
                     <div class="form_left col-12 col-sm-12 col-md-6">
-                      <div class="register_item name mb-3">
+                      <div class="register_login_item name mb-3">
                         <div class="input-group">
                           <label for="" class="form-label">Name</label>
                           <input
@@ -225,7 +224,7 @@
                         </div>
                         <span id="error-name"></span>
                       </div>
-                      <div class="register_item password mb-3">
+                      <div class="register_login_item password mb-3">
                         <div class="input-group">
                           <label for="" class="form-label">Password</label>
                           <input
@@ -238,7 +237,7 @@
                         </div>
                         <span id="error-password"></span>
                       </div>
-                      <div class="register_item email mb-3">
+                      <div class="register_login_item email mb-3">
                         <div class="input-group">
                           <label for="" class="form-label">Email</label>
                           <input
@@ -253,7 +252,7 @@
                       </div>
                     </div>
                     <div class="form_right col-12 col-sm-12 col-md-6">
-                      <div class="register_item datepicker mb-3">
+                      <div class="register_login_item datepicker mb-3">
                         <div class="input-group">
                           <label for="datepicker" class="form-label"
                             >Birth of date</label
@@ -267,7 +266,7 @@
                         </div>
                         <span id="error-bod"></span>
                       </div>
-                      <div class="register_item phone mb-3">
+                      <div class="register_login_item phone mb-3">
                         <div class="input-group">
                           <label for="" class="form-label">Phone</label>
                           <input
@@ -281,7 +280,7 @@
                         </div>
                         <span id="error-phone"></span>
                       </div>
-                      <div class="register_item email mb-3">
+                      <div class="register_login_item email mb-3">
                         <div class="input-group">
                           <label for="" class="form-label">Gender</label>
                           <select class="form_select" name="gender" id="gender">
@@ -314,6 +313,79 @@
         </div>
         </div>
      
+    </section>
+    <section class="login_modal">
+      <div
+          class="modal fade"
+          id="myLoginModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabelLogin"
+          aria-hidden="true"
+        >
+        <div class="container">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabelLogin">
+                  Login
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form class="form_content" id="login_form">
+                  <div class="row">
+                    <div class="col-12 col-sm-12">
+                      <div class="register_login_item email mb-3">
+                        <div class="input-group">
+                          <label for="" class="form-label">Email</label>
+                          <input
+                            type="email"
+                            class="form-control-input"
+                            name="login_email"
+                            id="login_email"
+                            placeholder=""
+                          />
+                        </div>
+                        <span id="error-email"></span>
+                      </div>
+                      <div class="register_login_item password mb-3">
+                        <div class="input-group">
+                          <label for="" class="form-label">Password</label>
+                          <input
+                            type="login_password"
+                            class="form-control-input"
+                            name="login_password"
+                            id="login_password"
+                            placeholder=""
+                          />
+                        </div>
+                        <span id="error-password"></span>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary col-6 col-sm-1 btn-close-footer"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="submit" form="login_form" class="btn btn-primary col-6 col-sm-1 btn-login-footer">
+                  Login
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
     </section>
     <section class="products"></section>
     <section class="services"></section>

@@ -1,4 +1,4 @@
-#myModal{
+#myModal,#myLoginModal{
     .container{
         .modal-dialog{
             margin: 0;
@@ -6,7 +6,7 @@
         }
         .form_content{
             text-align: center;
-            .register_item{
+            .register_login_item{
                 .input-group{
                     display: flex;
                     gap: 20px;
@@ -40,7 +40,7 @@
             
             
         }
-        .btn-save-footer{
+        .btn-save-footer,.btn-login-footer{
             @include styleButton()
         }
         .btn-close-footer{
