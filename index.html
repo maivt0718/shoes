@@ -37,6 +37,7 @@
       href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/jquery-ui.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="./css/main.css" />
   </head>
 
@@ -72,17 +73,6 @@
           <div class="header_nav">
             <nav class="navbar navbar-expand-sm">
               <div class="container-fluid">
-                <!-- <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span class="navbar-toggler-icon"></span>
-                </button> -->
                 <div
                   class="collapse navbar-collapse"
                   id="navbarSupportedContent"
@@ -219,7 +209,7 @@
                 ></button>
               </div>
               <div class="modal-body">
-                <form class="form_content">
+                <form class="form_content" id="form">
                   <div class="row">
                     <div class="form_left col-12 col-sm-12 col-md-6">
                       <div class="register_item name mb-3">
@@ -233,7 +223,7 @@
                             placeholder=""
                           />
                         </div>
-                        <span class="error-name"></span>
+                        <span id="error-name"></span>
                       </div>
                       <div class="register_item password mb-3">
                         <div class="input-group">
@@ -246,7 +236,7 @@
                             placeholder=""
                           />
                         </div>
-                        <span class="error-password"></span>
+                        <span id="error-password"></span>
                       </div>
                       <div class="register_item email mb-3">
                         <div class="input-group">
@@ -259,7 +249,7 @@
                             placeholder=""
                           />
                         </div>
-                        <span class="error-email"></span>
+                        <span id="error-email"></span>
                       </div>
                     </div>
                     <div class="form_right col-12 col-sm-12 col-md-6">
@@ -275,7 +265,7 @@
                             placeholder=""
                           />
                         </div>
-                        <span class="error-bod"></span>
+                        <span id="error-bod"></span>
                       </div>
                       <div class="register_item phone mb-3">
                         <div class="input-group">
@@ -286,21 +276,22 @@
                             name="phone"
                             id="phone"
                             placeholder=""
+                            value="0123456789"
                           />
                         </div>
-                        <span class="error-phone"></span>
+                        <span id="error-phone"></span>
                       </div>
                       <div class="register_item email mb-3">
                         <div class="input-group">
                           <label for="" class="form-label">Gender</label>
-                          <select class="form_select" name="" id="gender">
+                          <select class="form_select" name="gender" id="gender">
                             <option selected>Select one</option>
                             <option value="">Male</option>
                             <option value="">Female</option>
                             <option value="">Others</option>
                           </select>
                         </div>
-                        <span class="error-email"></span>
+                        <span id="error-gender"></span>
                       </div>
                     </div>
                   </div>
@@ -314,7 +305,7 @@
                 >
                   Close
                 </button>
-                <button type="button" class="btn btn-primary col-6 col-sm-1 btn-save-footer">
+                <button type="submit" form="form" class="btn btn-primary col-6 col-sm-1 btn-save-footer">
                   Register
                 </button>
               </div>
@@ -354,11 +345,14 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
     <script src="./js/index.js"></script>
+    <script src="./utils/utils.js"></script>
     <script src="./js/datepicker.js"></script>
     <script src="./js/countTimeDown.js"></script>
     <script src="./js/flashsales.js"></script>
+    <script src="./models/Customers.js"></script>
     <script src="./js/validation.js"></script>
     <script src="./js/register.js"></script>
   </body>

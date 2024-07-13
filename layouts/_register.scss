@@ -13,7 +13,7 @@
                     
                     label{
                         width: 15%;
-                        float: left;
+                        text-align: left;
                     }
                     .form-control-input,select{
                        width: 80%;
@@ -23,7 +23,9 @@
                     }
                 }
                 span{
-
+                    color: red;
+                    width: 100%;
+                    text-align: left;
                 }
             }
             .row{

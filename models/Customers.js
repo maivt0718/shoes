@@ -9,4 +9,14 @@ class Customer{
     getName = () => {
         return  this.name;
     }
+
+    setGender = (value) =>{
+        switch (value) {
+            case "Others":
+                this.gender = false;
+                break;
+            default:
+                this.gender = true;
+        }
+    }
 }

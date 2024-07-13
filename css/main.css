@@ -443,13 +443,18 @@ body {
 }
 #myModal .container .form_content .register_item .input-group label {
   width: 15%;
-  float: left;
+  text-align: left;
 }
 #myModal .container .form_content .register_item .input-group .form-control-input, #myModal .container .form_content .register_item .input-group select {
   width: 80%;
   border: 1px solid black;
   border-radius: 10px;
   padding: 5px 10px;
+}
+#myModal .container .form_content .register_item span {
+  color: red;
+  width: 100%;
+  text-align: left;
 }
 #myModal .container .btn-save-footer {
   background-color: rgb(17, 227, 17);

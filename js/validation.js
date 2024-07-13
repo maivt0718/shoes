@@ -1,10 +1,9 @@
 $.checkName = (span, value) => {
-    let regex = /\d/g;
-    if (! value.match(regex) && value.length > 0) { 
+    if (value.length > 0) { 
         $(`#${span}`).html("");
         return true
     } 
-    $(`#${span}`).html("This name is not blank and is alphabetic");
+    $(`#${span}`).html("This name is not blank");
     $(`#${span}`).css({"display": "block"})
     return false;
 }
@@ -21,12 +20,12 @@ $.checkEmail = (span, value) => {
 }
 
 $.checkPhone = (span, value) => {
-    let regex = /\d{10}/;
+    let regex = /0\d{9}/;
     if (value.match(regex) && value.length > 0) { 
         $(`#${span}`).html("");
         return true
     } 
-    $(`#${span}`).html("This phone is not correct in format with 11 digits");
+    $(`#${span}`).html("This phone is not correct in format with 10 digits, starting with 0");
     $(`#${span}`).css({"display": "block"})
     return false;
 }
@@ -43,13 +42,27 @@ $.checkPassword = (span, value) => {
     return false;
 }
 
-$.checkPosition = (span, value) => {
-    if (["male", "female", "others"].includes(value)) { 
+$.checkGender = (span, value) => {
+    let temp = $.removeVietnameseTones(value).trim().toLowerCase();
+    if (["male", "female", "others"].includes(temp)) { 
         $(`#${span}`).html("");
         return true
     } 
     
-    $(`#${span}`).html("The salary must be in [\"Male\", \"Female\", \"Others\"]");
+    $(`#${span}`).html("The gender must be in [\"Male\", \"Female\", \"Others\"]");
     $(`#${span}`).css({"display": "block"})
     return false;
 }
+
+$.checkDate = (span, value) => {
+    let regex = /\d{2}\/\d{2}\/\d{4}/g;
+    if (value.match(regex) && value.length > 0) { 
+        $(`#${span}`).html("");
+        return true
+    } 
+    
+    $(`#${span}`).html("The date must be in format dd/mm/yyyy");
+    $(`#${span}`).css({"display": "block"})
+    return false;
+}
+
