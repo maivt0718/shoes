@@ -1,0 +1,45 @@
+// ! home - product
+#product {
+    margin: 10px 0;
+    padding: 80px 0;
+    .container{
+        margin: 10px 0
+    }
+    h2 {
+      @include testStyle($fs-30, $fw-bold, $text-primary);
+      line-height: 51px;
+      margin-bottom: 50px;
+    }
+    .product_content {
+      ul {
+        justify-content: center;
+        margin-bottom: 30px;
+        li {
+          button {
+            @include testStyle(1.5vw, $fw-regular, $text-fade-hover);
+            line-height: 20px;
+            margin: 0 0.5vw;
+            border: none;
+            padding: 1vw 2vw;
+            &.active {
+              background-color: $primary-hover;
+              color: white;
+              &:hover {
+                color: white;
+              }
+            }
+            &:hover {
+              color: $text-primary;
+            }
+          }
+        }
+      }
+      #myTabContent {
+        .product_item {
+          .sales_container {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }

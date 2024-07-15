@@ -37,8 +37,15 @@
       href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/jquery-ui.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link rel="stylesheet" href="./library/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./library/owl.theme.default.min.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./scss/tainguyen.css" />
   </head>
 
   <body>
@@ -63,8 +70,15 @@
           </div>
           <div class="header_icon">
             <a href="#" data-bs-toggle="modal" data-bs-target="#myModal"
-              ><i class="fa-solid fa-address-card" title="Register"></i></a>
-            <a href="#" data-bs-toggle="modal" title="Login" data-bs-target="#myLoginModal"><i class="fa-solid fa-right-to-bracket"></i></a>
+              ><i class="fa-solid fa-address-card" title="Register"></i
+            ></a>
+            <a
+              href="#"
+              data-bs-toggle="modal"
+              title="Login"
+              data-bs-target="#myLoginModal"
+              ><i class="fa-solid fa-right-to-bracket"></i
+            ></a>
             <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
           </div>
         </div>
@@ -185,14 +199,13 @@
       </div>
     </section>
     <section class="register_modal">
-      
-        <div
-          class="modal fade"
-          id="myModal"
-          tabindex="-1"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
+      <div
+        class="modal fade"
+        id="myModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
         <div class="container">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -304,24 +317,27 @@
                 >
                   Close
                 </button>
-                <button type="submit" form="form" class="btn btn-primary col-6 col-sm-1 btn-save-footer">
+                <button
+                  type="submit"
+                  form="form"
+                  class="btn btn-primary col-6 col-sm-1 btn-save-footer"
+                >
                   Register
                 </button>
               </div>
             </div>
           </div>
         </div>
-        </div>
-     
+      </div>
     </section>
     <section class="login_modal">
       <div
-          class="modal fade"
-          id="myLoginModal"
-          tabindex="-1"
-          aria-labelledby="exampleModalLabelLogin"
-          aria-hidden="true"
-        >
+        class="modal fade"
+        id="myLoginModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabelLogin"
+        aria-hidden="true"
+      >
         <div class="container">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -378,16 +394,1678 @@
                 >
                   Close
                 </button>
-                <button type="submit" form="login_form" class="btn btn-primary col-6 col-sm-1 btn-login-footer">
+                <button
+                  type="submit"
+                  form="login_form"
+                  class="btn btn-primary col-6 col-sm-1 btn-login-footer"
+                >
                   Login
                 </button>
               </div>
             </div>
           </div>
         </div>
-        </div>
+      </div>
     </section>
-    <section class="products"></section>
+    <section class="flash_sale">
+      <div class="container">
+        <div class="sales_title">
+          <h4>DAILY DEALS</h4>
+          <h3>FLASH SALE</h3>
+        </div>
+        <div class="sales_content">
+          <h4>FLASH SALE</h4>
+          <div id="flash_shoes" class="owl-carousel owl-loaded owl-drag">
+            <div class="sales_container">
+              <div class="sales_img">
+                <img src="./img/flash_01.png" alt="" />
+                <div class="img_percent">
+                  <i class="fa-solid fa-bolt-lightning"></i>
+                  <span>-5%</span>
+                </div>
+                <div class="img_interact">
+                  <i class="fa-regular fa-heart" onclick="likeShoes(this)"></i>
+                  <i class="fa-regular fa-images"></i>
+                </div>
+                <div class="img_add">
+                  <h5>QUICK ADD</h5>
+                </div>
+              </div>
+              <div class="sales_info">
+                <a href="#">
+                  <h4>Air Force 1 Nike Air Zoom Pegasus 34</h4>
+                </a>
+                <div class="info_stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="info_prices">
+                  <h5>$140.00</h5>
+                  <h5>$155.00</h5>
+                </div>
+              </div>
+            </div>
+            <div class="sales_container">
+              <div class="sales_img">
+                <img src="./img/flash_02.png" alt="Sales Pic 2" />
+                <div class="img_percent">
+                  <i class="fa-solid fa-bolt-lightning"></i>
+                  <span>-2%</span>
+                </div>
+                <div class="img_interact">
+                  <i class="fa-regular fa-heart" onclick="likeShoes(this)"></i>
+                  <i class="fa-regular fa-images"></i>
+                </div>
+                <div class="img_add">
+                  <h5>QUICK ADD</h5>
+                </div>
+              </div>
+              <div class="sales_info">
+                <a href="#">
+                  <h4>Air Jordan 1 Mid</h4>
+                </a>
+                <div class="info_stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="info_prices">
+                  <h5>$167.00</h5>
+                  <h5>$185.00</h5>
+                </div>
+              </div>
+            </div>
+            <div class="sales_container">
+              <div class="sales_img">
+                <img src="./img/flash_03.png" alt="Sales Pic 3" />
+                <div class="img_percent">
+                  <i class="fa-solid fa-bolt-lightning"></i>
+                  <span>-9%</span>
+                </div>
+                <div class="img_interact">
+                  <i class="fa-regular fa-heart" onclick="likeShoes(this)"></i>
+                  <i class="fa-regular fa-images"></i>
+                </div>
+                <div class="img_add">
+                  <h5>QUICK ADD</h5>
+                </div>
+              </div>
+              <div class="sales_info">
+                <a href="#">
+                  <h4>Nike Air Max</h4>
+                </a>
+                <div class="info_stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="info_prices">
+                  <h5>$159.25</h5>
+                  <h5>$175.00</h5>
+                </div>
+              </div>
+            </div>
+            <div class="sales_container">
+              <!-- todo: sale-img -->
+              <div class="sales_img">
+                <img src="./img/flash_04.png" alt="Sales Pic 4" />
+                <div class="img_percent">
+                  <i class="fa-solid fa-bolt-lightning"></i>
+                  <span>-6%</span>
+                </div>
+                <div class="img_interact">
+                  <i class="fa-regular fa-heart" onclick="likeShoes(this)"></i>
+                  <i class="fa-regular fa-images"></i>
+                </div>
+                <div class="img_add">
+                  <h5>QUICK ADD</h5>
+                </div>
+              </div>
+              <div class="sales_info">
+                <a href="#">
+                  <h4>Classic Women Sneakers</h4>
+                </a>
+                <div class="info_stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="info_prices">
+                  <h5>$113.00</h5>
+                  <h5>$133.50</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="product">
+      <div class="container">
+        <h2 class="text-center">CURRENT PRODUCT</h2>
+        <!-- todo:  Nav and Tabs -->
+        <div class="product_content">
+          <!-- nav tab -->
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="all-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#all"
+                type="button"
+                role="tab"
+                aria-controls="all"
+                aria-selected="true"
+              >
+                ALL
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="men-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#men"
+                type="button"
+                role="tab"
+                aria-controls="men"
+                aria-selected="false"
+                tabindex="-1"
+              >
+                MEN
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="women-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#women"
+                type="button"
+                role="tab"
+                aria-controls="women"
+                aria-selected="false"
+                tabindex="-1"
+              >
+                WOMEN
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="adidas-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#adidas"
+                type="button"
+                role="tab"
+                aria-controls="adidas"
+                aria-selected="false"
+                tabindex="-1"
+              >
+                ADIDAS
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="nike-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nike"
+                type="button"
+                role="tab"
+                aria-controls="nike"
+                aria-selected="false"
+                tabindex="-1"
+              >
+                NIKE
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="converse-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#converse"
+                type="button"
+                role="tab"
+                aria-controls="converse"
+                aria-selected="false"
+                tabindex="-1"
+              >
+                CONVERSE
+              </button>
+            </li>
+          </ul>
+          <!-- tab content -->
+          <div class="tab-content" id="myTabContent">
+            <!-- todo: tab 1 - all products -->
+            <div
+              class="tab-pane fade show active"
+              id="all"
+              role="tabpanel"
+              aria-labelledby="all-tab"
+            >
+              <div class="row gy-5">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="product_item animate__animated animate__zoomIn">
+                    <div class="sales_container">
+                      <!-- todo: sale-img -->
+                      <div class="sales_img">
+                        <img
+                          src="https://shop.cyberlearn.vn/images/vans-black-black.png"
+                          alt="Sales Pic 1"
+                        />
+                        <div class="img_interact">
+                          <i
+                            class="fa-regular fa-heart"
+                            onclick="likeShoes(this)"
+                          ></i>
+                          <i class="fa-regular fa-images"></i>
+                        </div>
+                        <div class="img_add">
+                          <h5>QUICK ADD</h5>
+                        </div>
+                      </div>
+                      <!-- todo: sale-info -->
+                      <div class="sales_info">
+                        <a href="../views/detail.html?id=1">
+                          <h4>vans black</h4>
+                        </a>
+                        <div class="info_stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="info_prices">
+                          <h5>$200</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="product_item animate__animated animate__zoomIn">
+                    <div class="sales_container">
+                      <!-- todo: sale-img -->
+                      <div class="sales_img">
+                        <img
+                          src="https://shop.cyberlearn.vn/images/van-old-school.png"
+                          alt="Sales Pic 2"
+                        />
+                        <div class="img_interact">
+                          <i
+                            class="fa-regular fa-heart"
+                            onclick="likeShoes(this)"
+                          ></i>
+                          <i class="fa-regular fa-images"></i>
+                        </div>
+                        <div class="img_add">
+                          <h5>QUICK ADD</h5>
+                        </div>
+                      </div>
+                      <!-- todo: sale-info -->
+                      <div class="sales_info">
+                        <a href="../views/detail.html?id=2">
+                          <h4>vans old school</h4>
+                        </a>
+                        <div class="info_stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="info_prices">
+                          <h5>$200</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="product_item animate__animated animate__zoomIn">
+                    <div class="sales_container">
+                      <!-- todo: sale-img -->
+                      <div class="sales_img">
+                        <img
+                          src="https://shop.cyberlearn.vn/images/converse-chuck-taylor.png"
+                          alt="Sales Pic 3"
+                        />
+                        <div class="img_interact">
+                          <i
+                            class="fa-regular fa-heart"
+                            onclick="likeShoes(this)"
+                          ></i>
+                          <i class="fa-regular fa-images"></i>
+                        </div>
+                        <div class="img_add">
+                          <h5>QUICK ADD</h5>
+                        </div>
+                      </div>
+                      <!-- todo: sale-info -->
+                      <div class="sales_info">
+                        <a href="../views/detail.html?id=3">
+                          <h4>converse chuck taylor</h4>
+                        </a>
+                        <div class="info_stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="info_prices">
+                          <h5>$250</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="product_item animate__animated animate__zoomIn">
+                    <div class="sales_container">
+                      <!-- todo: sale-img -->
+                      <div class="sales_img">
+                        <img
+                          src="https://shop.cyberlearn.vn/images/nike-adapt-bb.png"
+                          alt="Sales Pic 4"
+                        />
+                        <div class="img_interact">
+                          <i
+                            class="fa-regular fa-heart"
+                            onclick="likeShoes(this)"
+                          ></i>
+                          <i class="fa-regular fa-images"></i>
+                        </div>
+                        <div class="img_add">
+                          <h5>QUICK ADD</h5>
+                        </div>
+                      </div>
+                      <!-- todo: sale-info -->
+                      <div class="sales_info">
+                        <a href="../views/detail.html?id=4">
+                          <h4>nike adapt bb</h4>
+                        </a>
+                        <div class="info_stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="info_prices">
+                          <h5>$350</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="product_item animate__animated animate__zoomIn">
+                    <div class="sales_container">
+                      <!-- todo: sale-img -->
+                      <div class="sales_img">
+                        <img
+                          src="https://shop.cyberlearn.vn/images/nike-air-max-97.png"
+                          alt="Sales Pic 5"
+                        />
+                        <div class="img_interact">
+                          <i
+                            class="fa-regular fa-heart"
+                            onclick="likeShoes(this)"
+                          ></i>
+                          <i class="fa-regular fa-images"></i>
+                        </div>
+                        <div class="img_add">
+                          <h5>QUICK ADD</h5>
+                        </div>
+                      </div>
+                      <!-- todo: sale-info -->
+                      <div class="sales_info">
+                        <a href="../views/detail.html?id=6">
+                          <h4>nike air max 97</h4>
+                        </a>
+                        <div class="info_stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="info_prices">
+                          <h5>$350</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="product_item animate__animated animate__zoomIn">
+                    <div class="sales_container">
+                      <!-- todo: sale-img -->
+                      <div class="sales_img">
+                        <img
+                          src="https://shop.cyberlearn.vn/images/nike-air-max-97-blue.png"
+                          alt="Sales Pic 6"
+                        />
+                        <div class="img_interact">
+                          <i
+                            class="fa-regular fa-heart"
+                            onclick="likeShoes(this)"
+                          ></i>
+                          <i class="fa-regular fa-images"></i>
+                        </div>
+                        <div class="img_add">
+                          <h5>QUICK ADD</h5>
+                        </div>
+                      </div>
+                      <!-- todo: sale-info -->
+                      <div class="sales_info">
+                        <a href="../views/detail.html?id=7">
+                          <h4>nike air max 97 blue</h4>
+                        </a>
+                        <div class="info_stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="info_prices">
+                          <h5>$350</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="product_item animate__animated animate__zoomIn">
+                    <div class="sales_container">
+                      <!-- todo: sale-img -->
+                      <div class="sales_img">
+                        <img
+                          src="https://shop.cyberlearn.vn/images/nike-flyknit.png"
+                          alt="Sales Pic 7"
+                        />
+                        <div class="img_interact">
+                          <i
+                            class="fa-regular fa-heart"
+                            onclick="likeShoes(this)"
+                          ></i>
+                          <i class="fa-regular fa-images"></i>
+                        </div>
+                        <div class="img_add">
+                          <h5>QUICK ADD</h5>
+                        </div>
+                      </div>
+                      <!-- todo: sale-info -->
+                      <div class="sales_info">
+                        <a href="../views/detail.html?id=8">
+                          <h4>nike flyknit</h4>
+                        </a>
+                        <div class="info_stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="info_prices">
+                          <h5>$250</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="product_item animate__animated animate__zoomIn">
+                    <div class="sales_container">
+                      <!-- todo: sale-img -->
+                      <div class="sales_img">
+                        <img
+                          src="https://shop.cyberlearn.vn/images/nike-react-element.png"
+                          alt="Sales Pic 8"
+                        />
+                        <div class="img_interact">
+                          <i
+                            class="fa-regular fa-heart"
+                            onclick="likeShoes(this)"
+                          ></i>
+                          <i class="fa-regular fa-images"></i>
+                        </div>
+                        <div class="img_add">
+                          <h5>QUICK ADD</h5>
+                        </div>
+                      </div>
+                      <!-- todo: sale-info -->
+                      <div class="sales_info">
+                        <a href="../views/detail.html?id=9">
+                          <h4>nike react element</h4>
+                        </a>
+                        <div class="info_stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="info_prices">
+                          <h5>$280</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="product_item animate__animated animate__zoomIn">
+                    <div class="sales_container">
+                      <!-- todo: sale-img -->
+                      <div class="sales_img">
+                        <img
+                          src="https://shop.cyberlearn.vn/images/nike-shox-tl.png"
+                          alt="Sales Pic 9"
+                        />
+                        <div class="img_interact">
+                          <i
+                            class="fa-regular fa-heart"
+                            onclick="likeShoes(this)"
+                          ></i>
+                          <i class="fa-regular fa-images"></i>
+                        </div>
+                        <div class="img_add">
+                          <h5>QUICK ADD</h5>
+                        </div>
+                      </div>
+                      <!-- todo: sale-info -->
+                      <div class="sales_info">
+                        <a href="../views/detail.html?id=10">
+                          <h4>nike shox tl</h4>
+                        </a>
+                        <div class="info_stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="info_prices">
+                          <h5>$280</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="product_item animate__animated animate__zoomIn">
+                    <div class="sales_container">
+                      <!-- todo: sale-img -->
+                      <div class="sales_img">
+                        <img
+                          src="https://shop.cyberlearn.vn/images/nike-sp-dunk.png"
+                          alt="Sales Pic 10"
+                        />
+                        <div class="img_interact">
+                          <i
+                            class="fa-regular fa-heart"
+                            onclick="likeShoes(this)"
+                          ></i>
+                          <i class="fa-regular fa-images"></i>
+                        </div>
+                        <div class="img_add">
+                          <h5>QUICK ADD</h5>
+                        </div>
+                      </div>
+                      <!-- todo: sale-info -->
+                      <div class="sales_info">
+                        <a href="../views/detail.html?id=11">
+                          <h4>nike sp dunk</h4>
+                        </a>
+                        <div class="info_stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="info_prices">
+                          <h5>$350</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="product_item animate__animated animate__zoomIn">
+                    <div class="sales_container">
+                      <!-- todo: sale-img -->
+                      <div class="sales_img">
+                        <img
+                          src="https://shop.cyberlearn.vn/images/adidas-prophere.png"
+                          alt="Sales Pic 11"
+                        />
+                        <div class="img_interact">
+                          <i
+                            class="fa-regular fa-heart"
+                            onclick="likeShoes(this)"
+                          ></i>
+                          <i class="fa-regular fa-images"></i>
+                        </div>
+                        <div class="img_add">
+                          <h5>QUICK ADD</h5>
+                        </div>
+                      </div>
+                      <!-- todo: sale-info -->
+                      <div class="sales_info">
+                        <a href="../views/detail.html?id=12">
+                          <h4>adidas prophere</h4>
+                        </a>
+                        <div class="info_stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="info_prices">
+                          <h5>$350</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="product_item animate__animated animate__zoomIn">
+                    <div class="sales_container">
+                      <!-- todo: sale-img -->
+                      <div class="sales_img">
+                        <img
+                          src="https://shop.cyberlearn.vn/images/adidas-prophere-black-white.png"
+                          alt="Sales Pic 12"
+                        />
+                        <div class="img_interact">
+                          <i
+                            class="fa-regular fa-heart"
+                            onclick="likeShoes(this)"
+                          ></i>
+                          <i class="fa-regular fa-images"></i>
+                        </div>
+                        <div class="img_add">
+                          <h5>QUICK ADD</h5>
+                        </div>
+                      </div>
+                      <!-- todo: sale-info -->
+                      <div class="sales_info">
+                        <a href="../views/detail.html?id=13">
+                          <h4>adidas prophere black white</h4>
+                        </a>
+                        <div class="info_stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="info_prices">
+                          <h5>$350</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="product_item animate__animated animate__zoomIn">
+                    <div class="sales_container">
+                      <!-- todo: sale-img -->
+                      <div class="sales_img">
+                        <img
+                          src="https://shop.cyberlearn.vn/images/adidas-prophere-customize.png"
+                          alt="Sales Pic 13"
+                        />
+                        <div class="img_interact">
+                          <i
+                            class="fa-regular fa-heart"
+                            onclick="likeShoes(this)"
+                          ></i>
+                          <i class="fa-regular fa-images"></i>
+                        </div>
+                        <div class="img_add">
+                          <h5>QUICK ADD</h5>
+                        </div>
+                      </div>
+                      <!-- todo: sale-info -->
+                      <div class="sales_info">
+                        <a href="../views/detail.html?id=14">
+                          <h4>adidas prophere customize</h4>
+                        </a>
+                        <div class="info_stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="info_prices">
+                          <h5>$350</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="product_item animate__animated animate__zoomIn">
+                    <div class="sales_container">
+                      <!-- todo: sale-img -->
+                      <div class="sales_img">
+                        <img
+                          src="https://shop.cyberlearn.vn/images/adidas-super-star-red.png"
+                          alt="Sales Pic 14"
+                        />
+                        <div class="img_interact">
+                          <i
+                            class="fa-regular fa-heart"
+                            onclick="likeShoes(this)"
+                          ></i>
+                          <i class="fa-regular fa-images"></i>
+                        </div>
+                        <div class="img_add">
+                          <h5>QUICK ADD</h5>
+                        </div>
+                      </div>
+                      <!-- todo: sale-info -->
+                      <div class="sales_info">
+                        <a href="../views/detail.html?id=15">
+                          <h4>adidas super star red</h4>
+                        </a>
+                        <div class="info_stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="info_prices">
+                          <h5>$350</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="product_item animate__animated animate__zoomIn">
+                    <div class="sales_container">
+                      <!-- todo: sale-img -->
+                      <div class="sales_img">
+                        <img
+                          src="https://shop.cyberlearn.vn/images/adidas-swift-run.png"
+                          alt="Sales Pic 15"
+                        />
+                        <div class="img_interact">
+                          <i
+                            class="fa-regular fa-heart"
+                            onclick="likeShoes(this)"
+                          ></i>
+                          <i class="fa-regular fa-images"></i>
+                        </div>
+                        <div class="img_add">
+                          <h5>QUICK ADD</h5>
+                        </div>
+                      </div>
+                      <!-- todo: sale-info -->
+                      <div class="sales_info">
+                        <a href="../views/detail.html?id=16">
+                          <h4>adidas swift run</h4>
+                        </a>
+                        <div class="info_stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="info_prices">
+                          <h5>$350</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="product_item animate__animated animate__zoomIn">
+                    <div class="sales_container">
+                      <!-- todo: sale-img -->
+                      <div class="sales_img">
+                        <img
+                          src="https://shop.cyberlearn.vn/images/adidas-tenisky-super-star.png"
+                          alt="Sales Pic 16"
+                        />
+                        <div class="img_interact">
+                          <i
+                            class="fa-regular fa-heart"
+                            onclick="likeShoes(this)"
+                          ></i>
+                          <i class="fa-regular fa-images"></i>
+                        </div>
+                        <div class="img_add">
+                          <h5>QUICK ADD</h5>
+                        </div>
+                      </div>
+                      <!-- todo: sale-info -->
+                      <div class="sales_info">
+                        <a href="../views/detail.html?id=17">
+                          <h4>adidas tenisky super star</h4>
+                        </a>
+                        <div class="info_stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="info_prices">
+                          <h5>$350</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="product_item animate__animated animate__zoomIn">
+                    <div class="sales_container">
+                      <!-- todo: sale-img -->
+                      <div class="sales_img">
+                        <img
+                          src="https://shop.cyberlearn.vn/images/adidas-ultraboost-4.png"
+                          alt="Sales Pic 17"
+                        />
+                        <div class="img_interact">
+                          <i
+                            class="fa-regular fa-heart"
+                            onclick="likeShoes(this)"
+                          ></i>
+                          <i class="fa-regular fa-images"></i>
+                        </div>
+                        <div class="img_add">
+                          <h5>QUICK ADD</h5>
+                        </div>
+                      </div>
+                      <!-- todo: sale-info -->
+                      <div class="sales_info">
+                        <a href="../views/detail.html?id=18">
+                          <h4>adidas ultraboost 4</h4>
+                        </a>
+                        <div class="info_stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="info_prices">
+                          <h5>$350</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="product_item animate__animated animate__zoomIn">
+                    <div class="sales_container">
+                      <!-- todo: sale-img -->
+                      <div class="sales_img">
+                        <img
+                          src="https://shop.cyberlearn.vn/images/adidas-yeezy-350.png"
+                          alt="Sales Pic 18"
+                        />
+                        <div class="img_interact">
+                          <i
+                            class="fa-regular fa-heart"
+                            onclick="likeShoes(this)"
+                          ></i>
+                          <i class="fa-regular fa-images"></i>
+                        </div>
+                        <div class="img_add">
+                          <h5>QUICK ADD</h5>
+                        </div>
+                      </div>
+                      <!-- todo: sale-info -->
+                      <div class="sales_info">
+                        <a href="../views/detail.html?id=19">
+                          <h4>adidas yeezy 350</h4>
+                        </a>
+                        <div class="info_stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="info_prices">
+                          <h5>$350</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="product_item animate__animated animate__zoomIn">
+                    <div class="sales_container">
+                      <!-- todo: sale-img -->
+                      <div class="sales_img">
+                        <img
+                          src="https://shop.cyberlearn.vn/images/string"
+                          alt="Sales Pic 19"
+                        />
+                        <div class="img_interact">
+                          <i
+                            class="fa-regular fa-heart"
+                            onclick="likeShoes(this)"
+                          ></i>
+                          <i class="fa-regular fa-images"></i>
+                        </div>
+                        <div class="img_add">
+                          <h5>QUICK ADD</h5>
+                        </div>
+                      </div>
+                      <!-- todo: sale-info -->
+                      <div class="sales_info">
+                        <a href="../views/detail.html?id=20">
+                          <h4>string</h4>
+                        </a>
+                        <div class="info_stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="info_prices">
+                          <h5>$0</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- todo: tab 2 - men -->
+            <div
+              class="tab-pane fade"
+              id="men"
+              role="tabpanel"
+              aria-labelledby="men-tab"
+            >
+              <div class="row gy-5"></div>
+            </div>
+            <!-- todo: tab 3 - women -->
+            <div
+              class="tab-pane fade"
+              id="women"
+              role="tabpanel"
+              aria-labelledby="women-tab"
+            >
+              <div class="row gy-5"></div>
+            </div>
+            <!-- todo: tab 4 - adidas -->
+            <div
+              class="tab-pane fade"
+              id="adidas"
+              role="tabpanel"
+              aria-labelledby="adidas-tab"
+            >
+              <div class="row gy-5">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="product_item animate__animated animate__zoomIn">
+                    <div class="sales_container">
+                      <!-- todo: sale-img -->
+                      <div class="sales_img">
+                        <img
+                          src="https://shop.cyberlearn.vn/images/adidas-prophere.png"
+                          alt="Sales Pic 1"
+                        />
+                        <div class="img_interact">
+                          <i
+                            class="fa-regular fa-heart"
+                            onclick="likeShoes(this)"
+                          ></i>
+                          <i class="fa-regular fa-images"></i>
+                        </div>
+                        <div class="img_add">
+                          <h5>QUICK ADD</h5>
+                        </div>
+                      </div>
+                      <!-- todo: sale-info -->
+                      <div class="sales_info">
+                        <a href="../views/detail.html?id=12">
+                          <h4>adidas prophere</h4>
+                        </a>
+                        <div class="info_stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="info_prices">
+                          <h5>$350</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="product_item animate__animated animate__zoomIn">
+                    <div class="sales_container">
+                      <!-- todo: sale-img -->
+                      <div class="sales_img">
+                        <img
+                          src="https://shop.cyberlearn.vn/images/adidas-prophere-black-white.png"
+                          alt="Sales Pic 2"
+                        />
+                        <div class="img_interact">
+                          <i
+                            class="fa-regular fa-heart"
+                            onclick="likeShoes(this)"
+                          ></i>
+                          <i class="fa-regular fa-images"></i>
+                        </div>
+                        <div class="img_add">
+                          <h5>QUICK ADD</h5>
+                        </div>
+                      </div>
+                      <!-- todo: sale-info -->
+                      <div class="sales_info">
+                        <a href="../views/detail.html?id=13">
+                          <h4>adidas prophere black white</h4>
+                        </a>
+                        <div class="info_stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="info_prices">
+                          <h5>$350</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="product_item animate__animated animate__zoomIn">
+                    <div class="sales_container">
+                      <!-- todo: sale-img -->
+                      <div class="sales_img">
+                        <img
+                          src="https://shop.cyberlearn.vn/images/adidas-prophere-customize.png"
+                          alt="Sales Pic 3"
+                        />
+                        <div class="img_interact">
+                          <i
+                            class="fa-regular fa-heart"
+                            onclick="likeShoes(this)"
+                          ></i>
+                          <i class="fa-regular fa-images"></i>
+                        </div>
+                        <div class="img_add">
+                          <h5>QUICK ADD</h5>
+                        </div>
+                      </div>
+                      <!-- todo: sale-info -->
+                      <div class="sales_info">
+                        <a href="../views/detail.html?id=14">
+                          <h4>adidas prophere customize</h4>
+                        </a>
+                        <div class="info_stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="info_prices">
+                          <h5>$350</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="product_item animate__animated animate__zoomIn">
+                    <div class="sales_container">
+                      <!-- todo: sale-img -->
+                      <div class="sales_img">
+                        <img
+                          src="https://shop.cyberlearn.vn/images/adidas-super-star-red.png"
+                          alt="Sales Pic 4"
+                        />
+                        <div class="img_interact">
+                          <i
+                            class="fa-regular fa-heart"
+                            onclick="likeShoes(this)"
+                          ></i>
+                          <i class="fa-regular fa-images"></i>
+                        </div>
+                        <div class="img_add">
+                          <h5>QUICK ADD</h5>
+                        </div>
+                      </div>
+                      <!-- todo: sale-info -->
+                      <div class="sales_info">
+                        <a href="../views/detail.html?id=15">
+                          <h4>adidas super star red</h4>
+                        </a>
+                        <div class="info_stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="info_prices">
+                          <h5>$350</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="product_item animate__animated animate__zoomIn">
+                    <div class="sales_container">
+                      <!-- todo: sale-img -->
+                      <div class="sales_img">
+                        <img
+                          src="https://shop.cyberlearn.vn/images/adidas-swift-run.png"
+                          alt="Sales Pic 5"
+                        />
+                        <div class="img_interact">
+                          <i
+                            class="fa-regular fa-heart"
+                            onclick="likeShoes(this)"
+                          ></i>
+                          <i class="fa-regular fa-images"></i>
+                        </div>
+                        <div class="img_add">
+                          <h5>QUICK ADD</h5>
+                        </div>
+                      </div>
+                      <!-- todo: sale-info -->
+                      <div class="sales_info">
+                        <a href="../views/detail.html?id=16">
+                          <h4>adidas swift run</h4>
+                        </a>
+                        <div class="info_stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="info_prices">
+                          <h5>$350</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="product_item animate__animated animate__zoomIn">
+                    <div class="sales_container">
+                      <!-- todo: sale-img -->
+                      <div class="sales_img">
+                        <img
+                          src="https://shop.cyberlearn.vn/images/adidas-tenisky-super-star.png"
+                          alt="Sales Pic 6"
+                        />
+                        <div class="img_interact">
+                          <i
+                            class="fa-regular fa-heart"
+                            onclick="likeShoes(this)"
+                          ></i>
+                          <i class="fa-regular fa-images"></i>
+                        </div>
+                        <div class="img_add">
+                          <h5>QUICK ADD</h5>
+                        </div>
+                      </div>
+                      <!-- todo: sale-info -->
+                      <div class="sales_info">
+                        <a href="../views/detail.html?id=17">
+                          <h4>adidas tenisky super star</h4>
+                        </a>
+                        <div class="info_stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="info_prices">
+                          <h5>$350</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="product_item animate__animated animate__zoomIn">
+                    <div class="sales_container">
+                      <!-- todo: sale-img -->
+                      <div class="sales_img">
+                        <img
+                          src="https://shop.cyberlearn.vn/images/adidas-ultraboost-4.png"
+                          alt="Sales Pic 7"
+                        />
+                        <div class="img_interact">
+                          <i
+                            class="fa-regular fa-heart"
+                            onclick="likeShoes(this)"
+                          ></i>
+                          <i class="fa-regular fa-images"></i>
+                        </div>
+                        <div class="img_add">
+                          <h5>QUICK ADD</h5>
+                        </div>
+                      </div>
+                      <!-- todo: sale-info -->
+                      <div class="sales_info">
+                        <a href="../views/detail.html?id=18">
+                          <h4>adidas ultraboost 4</h4>
+                        </a>
+                        <div class="info_stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="info_prices">
+                          <h5>$350</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="product_item animate__animated animate__zoomIn">
+                    <div class="sales_container">
+                      <!-- todo: sale-img -->
+                      <div class="sales_img">
+                        <img
+                          src="https://shop.cyberlearn.vn/images/adidas-yeezy-350.png"
+                          alt="Sales Pic 8"
+                        />
+                        <div class="img_interact">
+                          <i
+                            class="fa-regular fa-heart"
+                            onclick="likeShoes(this)"
+                          ></i>
+                          <i class="fa-regular fa-images"></i>
+                        </div>
+                        <div class="img_add">
+                          <h5>QUICK ADD</h5>
+                        </div>
+                      </div>
+                      <!-- todo: sale-info -->
+                      <div class="sales_info">
+                        <a href="../views/detail.html?id=19">
+                          <h4>adidas yeezy 350</h4>
+                        </a>
+                        <div class="info_stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="info_prices">
+                          <h5>$350</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- todo: tab 5 - nike -->
+            <div
+              class="tab-pane fade"
+              id="nike"
+              role="tabpanel"
+              aria-labelledby="nike-tab"
+            >
+              <div class="row gy-5">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="product_item animate__animated animate__zoomIn">
+                    <div class="sales_container">
+                      <!-- todo: sale-img -->
+                      <div class="sales_img">
+                        <img
+                          src="https://shop.cyberlearn.vn/images/nike-adapt-bb.png"
+                          alt="Sales Pic 1"
+                        />
+                        <div class="img_interact">
+                          <i
+                            class="fa-regular fa-heart"
+                            onclick="likeShoes(this)"
+                          ></i>
+                          <i class="fa-regular fa-images"></i>
+                        </div>
+                        <div class="img_add">
+                          <h5>QUICK ADD</h5>
+                        </div>
+                      </div>
+                      <!-- todo: sale-info -->
+                      <div class="sales_info">
+                        <a href="../views/detail.html?id=4">
+                          <h4>nike adapt bb</h4>
+                        </a>
+                        <div class="info_stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="info_prices">
+                          <h5>$350</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="product_item animate__animated animate__zoomIn">
+                    <div class="sales_container">
+                      <!-- todo: sale-img -->
+                      <div class="sales_img">
+                        <img
+                          src="https://shop.cyberlearn.vn/images/nike-air-max-97.png"
+                          alt="Sales Pic 2"
+                        />
+                        <div class="img_interact">
+                          <i
+                            class="fa-regular fa-heart"
+                            onclick="likeShoes(this)"
+                          ></i>
+                          <i class="fa-regular fa-images"></i>
+                        </div>
+                        <div class="img_add">
+                          <h5>QUICK ADD</h5>
+                        </div>
+                      </div>
+                      <!-- todo: sale-info -->
+                      <div class="sales_info">
+                        <a href="../views/detail.html?id=6">
+                          <h4>nike air max 97</h4>
+                        </a>
+                        <div class="info_stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="info_prices">
+                          <h5>$350</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="product_item animate__animated animate__zoomIn">
+                    <div class="sales_container">
+                      <!-- todo: sale-img -->
+                      <div class="sales_img">
+                        <img
+                          src="https://shop.cyberlearn.vn/images/nike-air-max-97-blue.png"
+                          alt="Sales Pic 3"
+                        />
+                        <div class="img_interact">
+                          <i
+                            class="fa-regular fa-heart"
+                            onclick="likeShoes(this)"
+                          ></i>
+                          <i class="fa-regular fa-images"></i>
+                        </div>
+                        <div class="img_add">
+                          <h5>QUICK ADD</h5>
+                        </div>
+                      </div>
+                      <!-- todo: sale-info -->
+                      <div class="sales_info">
+                        <a href="../views/detail.html?id=7">
+                          <h4>nike air max 97 blue</h4>
+                        </a>
+                        <div class="info_stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="info_prices">
+                          <h5>$350</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="product_item animate__animated animate__zoomIn">
+                    <div class="sales_container">
+                      <!-- todo: sale-img -->
+                      <div class="sales_img">
+                        <img
+                          src="https://shop.cyberlearn.vn/images/nike-flyknit.png"
+                          alt="Sales Pic 4"
+                        />
+                        <div class="img_interact">
+                          <i
+                            class="fa-regular fa-heart"
+                            onclick="likeShoes(this)"
+                          ></i>
+                          <i class="fa-regular fa-images"></i>
+                        </div>
+                        <div class="img_add">
+                          <h5>QUICK ADD</h5>
+                        </div>
+                      </div>
+                      <!-- todo: sale-info -->
+                      <div class="sales_info">
+                        <a href="../views/detail.html?id=8">
+                          <h4>nike flyknit</h4>
+                        </a>
+                        <div class="info_stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="info_prices">
+                          <h5>$250</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="product_item animate__animated animate__zoomIn">
+                    <div class="sales_container">
+                      <!-- todo: sale-img -->
+                      <div class="sales_img">
+                        <img
+                          src="https://shop.cyberlearn.vn/images/nike-react-element.png"
+                          alt="Sales Pic 5"
+                        />
+                        <div class="img_interact">
+                          <i
+                            class="fa-regular fa-heart"
+                            onclick="likeShoes(this)"
+                          ></i>
+                          <i class="fa-regular fa-images"></i>
+                        </div>
+                        <div class="img_add">
+                          <h5>QUICK ADD</h5>
+                        </div>
+                      </div>
+                      <!-- todo: sale-info -->
+                      <div class="sales_info">
+                        <a href="../views/detail.html?id=9">
+                          <h4>nike react element</h4>
+                        </a>
+                        <div class="info_stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="info_prices">
+                          <h5>$280</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="product_item animate__animated animate__zoomIn">
+                    <div class="sales_container">
+                      <!-- todo: sale-img -->
+                      <div class="sales_img">
+                        <img
+                          src="https://shop.cyberlearn.vn/images/nike-shox-tl.png"
+                          alt="Sales Pic 6"
+                        />
+                        <div class="img_interact">
+                          <i
+                            class="fa-regular fa-heart"
+                            onclick="likeShoes(this)"
+                          ></i>
+                          <i class="fa-regular fa-images"></i>
+                        </div>
+                        <div class="img_add">
+                          <h5>QUICK ADD</h5>
+                        </div>
+                      </div>
+                      <!-- todo: sale-info -->
+                      <div class="sales_info">
+                        <a href="../views/detail.html?id=10">
+                          <h4>nike shox tl</h4>
+                        </a>
+                        <div class="info_stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="info_prices">
+                          <h5>$280</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="product_item animate__animated animate__zoomIn">
+                    <div class="sales_container">
+                      <!-- todo: sale-img -->
+                      <div class="sales_img">
+                        <img
+                          src="https://shop.cyberlearn.vn/images/nike-sp-dunk.png"
+                          alt="Sales Pic 7"
+                        />
+                        <div class="img_interact">
+                          <i
+                            class="fa-regular fa-heart"
+                            onclick="likeShoes(this)"
+                          ></i>
+                          <i class="fa-regular fa-images"></i>
+                        </div>
+                        <div class="img_add">
+                          <h5>QUICK ADD</h5>
+                        </div>
+                      </div>
+                      <!-- todo: sale-info -->
+                      <div class="sales_info">
+                        <a href="../views/detail.html?id=11">
+                          <h4>nike sp dunk</h4>
+                        </a>
+                        <div class="info_stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="info_prices">
+                          <h5>$350</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- todo: tab 6 - converse -->
+            <div
+              class="tab-pane fade"
+              id="converse"
+              role="tabpanel"
+              aria-labelledby="converse-tab"
+            >
+              <div class="row gy-5"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="services"></section>
     <footer class="home_footer">
       <!-- place footer here -->
@@ -417,7 +2095,10 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
 
     <script src="./js/index.js"></script>
     <script src="./utils/utils.js"></script>
@@ -427,5 +2108,29 @@
     <script src="./models/Customers.js"></script>
     <script src="./js/validation.js"></script>
     <script src="./js/register.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          autoplay: true,
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 2,
+            },
+            1000: {
+              items: 3,
+            },
+          },
+        });
+        $("#customer-carousel").owlCarousel({
+          dots: true,
+        });
+      });
+    </script>
   </body>
 </html>
