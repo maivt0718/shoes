@@ -13,12 +13,12 @@ $.GetCarouseShoeInfo = async (...ids) => {
 
 $.renderCarousel = () => {
   result = $.GetCarouseShoeInfo(12, 11);
-  content = ""
+  content = "";
   result
     .then((res) => {
       for (const element of res) {
-        let {description, image,categories} = element
-       
+        let { description, image, categories } = element;
+
         content += `
         <div class="carousel-item">
             <div class="row">
@@ -34,15 +34,14 @@ $.renderCarousel = () => {
             </div>
             
           </div>
-        `
+        `;
       }
       $("#home_carousel").html(content);
-    $("#home_carousel > div:first-child").addClass("active");
+      $("#home_carousel > div:first-child").addClass("active");
     })
     .catch((err) => {
       console.log(err);
     });
-    
 };
 
 const instance = axios.create({
@@ -51,4 +50,63 @@ const instance = axios.create({
   // headers: {'X-Custom-Header': 'foobar'}
 });
 
-$.renderCarousel()
+$.renderCarousel();
+
+function layDuLieuGiay() {
+  let promise = axios({
+    url: "https://shop.cyberlearn.vn/api/Product",
+    method: "GET",
+  });
+  promise
+    .then((res) => {
+      console.log(res);
+      renderDuLieuGiay(res.data.content);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+}
+layDuLieuGiay();
+
+// function renderDuLieuGiay(arrGiay, idSort = "all") {
+//   let content = "";
+//   for (let giay of arrGiay) {
+//     let { image, name, price } = giay;
+//     content += `
+//     <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+//                 <div class="product_item animate__animated animate__zoomIn">
+//                   <div class="sales_container">
+//                     <!-- todo: sale-img -->
+//                     <div class="sales_img">
+//                       <img src="${image}" alt="Sales Pic 1">
+//                       <div class="img_interact">
+//                         <i class="fa-regular fa-heart" onclick="likeShoes(this)"></i>
+//                         <i class="fa-regular fa-images"></i>
+//                       </div>
+//                       <div class="img_add">
+//                         <h5>QUICK ADD</h5>
+//                       </div>
+//                     </div>
+//                     <!-- todo: sale-info -->
+//                     <div class="sales_info">
+//                       <a href="../views/detail.html?id=1">
+//                         <h4>${name}</h4>
+//                       </a>
+//                       <div class="info_stars">
+//                         <i class="fa-solid fa-star"></i>
+//                         <i class="fa-solid fa-star"></i>
+//                         <i class="fa-solid fa-star"></i>
+//                         <i class="fa-solid fa-star"></i>
+//                         <i class="fa-solid fa-star-half-stroke"></i>
+//                       </div>
+//                       <div class="info_prices">
+//                         <h5>${price}</h5>
+//                       </div>
+//                     </div>
+//                   </div>
+//                 </div>
+//               </div>
+//     `;
+//   }
+//   document.getElementById(idSort).innerHTML = content;
+// }
