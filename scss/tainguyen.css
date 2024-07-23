@@ -30,12 +30,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 400px 20px 20px;
+  margin: 100px 0;
 }
 .flash_sale .container {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 100px auto;
 }
 .flash_sale .sales_title {
   width: 15%;
@@ -341,6 +342,11 @@ body {
 }
 #home_trending .trending_grid .grid_item-shoe:hover img {
   filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.5));
+}
+
+#services{
+  background-color: #d7d7d7;
+  padding: 100px;
 }
 
 #services .service_item .img_text {
